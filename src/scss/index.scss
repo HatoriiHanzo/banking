@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  
+  font-size: 18px;
+  font-family: 'Aldrich', sans-serif;
+  
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.block{
+
+  width: 60vmin;
+  height: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items:center;
+
+}
+
+p{
+  width: 50%;
+  height: 5%;
+  flex-grow: 1;
+  text-align: center;
+}
+
+body{
+  background: #100a1c;
+  background-image:
+    radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+  background-attachment: fixed;
+  color: #6cacc5;
+}
+
+::placeholder { 
+  color: #033076;
+  opacity: 1;
+  font-family: 'Aldrich',sans-serif;
+}
+input{
+  height: 5%;
+  color: #033076;
+  border: none;
+  border-bottom: 2px solid #033076;
+  border-radius: 4px;
+  background-color: #5c748d;
+  outline: none;
+}
+
+.bbox{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.topbox{
+width: 100%;
+height: 46%;
+}
+
+.topbox input{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+button{
+  height: 50%;
+  width: 25%;
+}
+
+
+@media screen and (max-width:450px) {
+  .block{
+    width: 100vmin;
+    height: 90vh;
+  }
+  .block input{
+    width: 100%;
+  }
+  button{
+    width: 75%;
+    height: 25%;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width:450px) and (max-width:768px) {
+  .block{
+    width: 90vmin;
+    height: 90vmin;
+  }
+  .block input{
+    width: 100%;
+  }
+  button{
+    width: 75%;
+    height: 25%;
+    align-self: center;
+  }
+}
